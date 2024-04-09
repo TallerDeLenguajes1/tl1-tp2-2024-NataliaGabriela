@@ -14,7 +14,7 @@ int main()
         for (j = 0; j < M; j++)
         {
             *(p_mt + (i * M + j)) = 1 + rand() % 100;
-            printf("%d ", (*p_mt)++);
+            printf("%d ", *(p_mt + (i * M + j)));
         }
         printf("\n");
     }
